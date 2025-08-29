@@ -1,64 +1,61 @@
-# String Review
-+ Review user stories of Sprint on 22 August 2025
+# Đánh Giá Sprint
++ Đánh giá các user story của Sprint ngày 22 tháng 8 năm 2025
 
   OK
-# The 2nd Sprint Task:
+# Nhiệm vụ Sprint thứ 2:
 ## User Story 1:
-Key Points Covered:
+Những điểm chính đã đề cập:
 
-PHP Tags: PHP code is enclosed within tags, and = ?> for short echo syntax.
+- Thẻ PHP: Mã PHP được đặt trong các thẻ <?php ... ?>, và = ?> dùng để in nhanh.
+- Biến: Biến trong PHP bắt đầu với ký tự $, theo sau là tên biến.
+- Câu lệnh & dấu chấm phẩy: Các câu lệnh PHP kết thúc bằng dấu ; để báo hiệu kết thúc một chỉ thị.
+- Kiểu dữ liệu: PHP hỗ trợ nhiều kiểu dữ liệu như chuỗi, số nguyên, boolean, mảng và đối tượng.
+- Cấu trúc điều khiển: Đã tìm hiểu về if-else, vòng lặp (for, while, foreach) và switch.
+- Hàm: Hàm được định nghĩa bằng từ khóa function, tên hàm và dấu ngoặc để nhận tham số.
 
-Variables: Variables in PHP begin with the $ symbol, followed by the variable name.
-
-Statements & Semicolons: PHP statements end with semicolons (;), signaling the end of an instruction.
-
-Data Types: PHP supports a variety of data types, including strings, integers, booleans, arrays, and objects.
-
-Control Structures: If-else, loops (for, while, foreach), and switch statements were also discussed.
-
-Functions: Functions are defined using the function keyword followed by a name and parentheses for parameters.
-
+Ví dụ:
+```php
 <?php
 $say = "hello";
+```
 
-Example:
-
+```php
 <?php
-
 namespace App\Http\Controllers;
 
- use Illuminate\Http\Request;
+use Illuminate\Http\Request;
 
 class testController extends Controller
 {
     public function index(){
-
         $Duong = "Hello world";
         echo $Duong;
-    return view('testView');
+        return view('testView');
     }
-    
 }
-Review Outcome: The user story was successfully completed. All the key elements of PHP syntax were clearly understood, including variables, operators, loops, and control structures. php Syntax.
-# Test Environment.
+}
+```
+
+Kết quả đánh giá: User story đã hoàn thành thành công. Tất cả các yếu tố quan trọng về cú pháp PHP như biến, toán tử, vòng lặp và cấu trúc điều khiển đều được hiểu rõ.
+
+# Môi trường kiểm thử
 ## User Story 2:
 
-php programming Control The goal of this user story was to explore how PHP manages program flow, including loops, conditional statements, and function control.
+Kiểm soát lập trình PHP  
+Mục tiêu của user story này là khám phá cách PHP quản lý luồng chương trình, bao gồm vòng lặp, câu điều kiện và kiểm soát hàm.
 
-Key Points Covered:
+Những điểm chính đã đề cập:
 
-If Statements: Used to execute code based on conditions.
+- Câu lệnh If: Dùng để thực thi mã theo điều kiện.
+- Switch Case: Cho phép phân nhánh nhiều chiều.
+- Vòng lặp: Đã tìm hiểu các vòng lặp for, while, foreach để thực hiện các tác vụ lặp lại.
+- Break & Continue: Hai từ khóa này giúp kiểm soát luồng của vòng lặp, với break thoát khỏi vòng lặp và continue chuyển sang lần lặp tiếp theo.
+- Gọi hàm: Hàm được dùng để chia nhỏ mã thành các phần có thể tái sử dụng, với return để trả về giá trị.
 
-Switch Case: A control structure that allows multi-way branching.
+Kết quả đánh giá: Nhiệm vụ đã hoàn thành thành công. Tất cả các khái niệm về cấu trúc điều khiển của PHP đều được trình bày rõ ràng, và đã hiểu cách quản lý luồng điều khiển trong PHP.
 
-Loops: Loops like for, while, and foreach were explored to execute repetitive tasks.
-
-Break & Continue: These keywords allow control over the flow of loops, with break exiting the loop and continue skipping to the next iteration.
-
-Function Calls: Functions were discussed as a method for breaking up code into reusable pieces, with the return statement used to output values.
-
-Review Outcome: The task was completed successfully. All concepts related to control structures in PHP were covered effectively, and understanding of how to manage control flow in PHP was demonstrated.
-
+Ví dụ:
+```php
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
@@ -70,39 +67,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Nhập tên của bạn: <input type="text" name="name">
     <input type="submit" value="Gửi">
 </form>
+```
 
 ## User Story 3:
-Methods This user story focused on understanding PHP methods, which are essential for structuring and organizing code, particularly in object-oriented programming.
+Phương thức  
+User story này tập trung vào việc hiểu các phương thức trong PHP, đặc biệt quan trọng khi lập trình hướng đối tượng.
 
-Key Points Covered:
+Những điểm chính đã đề cập:
 
-Defining Methods: Methods are functions defined inside classes in PHP and are used to define behaviors for objects.
+- Định nghĩa phương thức: Phương thức là các hàm được khai báo trong lớp, dùng để định nghĩa hành vi cho object.
+- Public, Private, Protected: PHP hỗ trợ các phạm vi truy cập cho phương thức, giúp kiểm soát việc truy cập hoặc giới hạn chức năng.
+- Phương thức tĩnh: Phương thức thuộc về lớp, không thuộc về đối tượng cụ thể.
+- Hàm khởi tạo và hủy: Các phương thức đặc biệt dùng để khởi tạo (__construct) và giải phóng (__destruct) object.
+- Gọi phương thức: Phương thức được gọi thông qua đối tượng hoặc tên lớp (nếu là tĩnh).
 
-Public, Private, and Protected Methods: PHP supports different access modifiers for methods, allowing for the restriction or exposure of functionality.
-
-Static Methods: Methods that belong to the class itself, rather than to instances of the class.
-
-Constructor and Destructor: Special methods for initializing and cleaning up objects (__construct, __destruct).
-
-_ Calling Methods: Methods are invoked using the object or the class name, depending on whether they are instance or static methods.
-
-Review Outcome: This user story was completed successfully. The concept of methods, including access modifiers and static methods, was well understood.
+Kết quả đánh giá: User story đã hoàn thành thành công. Các khái niệm về phương thức, phạm vi truy cập và phương thức tĩnh đều được nắm vững.
 
 ## User Story 4:
-Php in Web App Development This user story emphasized the role of PHP in the broader context of web application development.
+PHP trong phát triển ứng dụng web  
+User story này nhấn mạnh vai trò của PHP trong bối cảnh phát triển ứng dụng web.
 
-Key Points Covered:
+Những điểm chính đã đề cập:
 
-Dynamic Content Generation: PHP is widely used to generate dynamic web pages by embedding PHP code within HTML.
+- Sinh nội dung động: PHP được dùng phổ biến để tạo trang web động bằng cách nhúng mã PHP vào HTML.
+- Tương tác với cơ sở dữ liệu: PHP dễ dàng kết nối với MySQL (hoặc các database khác) để thực hiện các thao tác CRUD (Thêm, Đọc, Sửa, Xóa).
+- Session và Cookie: PHP quản lý session và cookie, rất cần thiết để duy trì trạng thái người dùng giữa các lần truy cập trang.
+- Xử lý form: PHP thường dùng để xử lý dữ liệu form gửi qua phương thức GET hoặc POST, bao gồm cả kiểm tra và lưu vào database.
+- Bảo mật: PHP có các hàm hỗ trợ bảo mật như lọc đầu vào, chống SQL injection và dùng prepared statement.
+- Framework: Công cụ như Laravel giúp phát triển PHP hiệu quả hơn với các tính năng như routing, middleware và ORM (Eloquent).
 
-Database Interaction: PHP works seamlessly with MySQL (or other databases) for CRUD operations (Create, Read, Update, Delete).
-
-Sessions and Cookies: PHP handles user sessions and cookies, which are essential for maintaining state across page requests.
-
-Handling Forms: PHP is used to process form data sent via GET or POST methods, including validation and saving to a database.
-
-Security: PHP includes built-in functions for security, like filtering input, protecting against SQL injection, and using prepared statements.
-
-Frameworks: Tools like Laravel make PHP development even more efficient by offering features like routing, middleware, and ORM (Eloquent).
-
-Review Outcome: This user story was successfully completed. PHP's role in web development was clearly understood, including its ability to create dynamic pages, interact with databases, and manage sessions.
+Kết quả đánh giá: User story đã hoàn thành thành công. Vai trò của PHP trong phát triển web đã được hiểu rõ, bao gồm khả năng tạo trang động, tương tác database và quản lý session.
