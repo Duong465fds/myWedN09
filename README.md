@@ -2,10 +2,8 @@
 + Review user stories of Sprint on 22 August 2025
 
   OK
-  # The 2nd Sprint Task:
+# The 2nd Sprint Task:
 ## User Story 1:
-The goal was to understand the foundational syntax of PHP and its usage in writing dynamic and efficient PHP code.
-
 Key Points Covered:
 
 PHP Tags: PHP code is enclosed within tags, and = ?> for short echo syntax.
@@ -35,8 +33,8 @@ class testController extends Controller
 {
     public function index(){
 
-        $nguyet = "Nguyen say Hello";
-        echo $nguyet;
+        $Duong = "Hello world";
+        echo $Duong;
     return view('testView');
     }
     
