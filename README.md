@@ -41,8 +41,9 @@ class testController extends Controller
     }
     
 }
-Review Outcome: The user story was successfully completed. All the key elements of PHP syntax were clearly understood, including variables, operators, loops, and control structures. php Syntax
+Review Outcome: The user story was successfully completed. All the key elements of PHP syntax were clearly understood, including variables, operators, loops, and control structures. php Syntax.
 ## User Story 2:
+
 php programming Control The goal of this user story was to explore how PHP manages program flow, including loops, conditional statements, and function control.
 
 Key Points Covered:
@@ -70,7 +71,7 @@ if ($age >= 18) {
     echo "Bạn chưa đủ tuổi trưởng thành.";
 }
 ?>
-##User Story 3:
+## User Story 3:
 Methods This user story focused on understanding PHP methods, which are essential for structuring and organizing code, particularly in object-oriented programming.
 
 Key Points Covered:
