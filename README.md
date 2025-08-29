@@ -58,17 +58,18 @@ Function Calls: Functions were discussed as a method for breaking up code into r
 
 Review Outcome: The task was completed successfully. All concepts related to control structures in PHP were covered effectively, and understanding of how to manage control flow in PHP was demonstrated.
 
-
 <?php
-
-$age = 20;
-
-if ($age >= 18) {
-    echo "Bạn đủ tuổi trưởng thành!";
-} else {
-    echo "Bạn chưa đủ tuổi trưởng thành.";
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    echo "Xin chào, " . htmlspecialchars($name) . "!";
 }
 ?>
+
+<form method="post">
+    Nhập tên của bạn: <input type="text" name="name">
+    <input type="submit" value="Gửi">
+</form>
+
 ## User Story 3:
 Methods This user story focused on understanding PHP methods, which are essential for structuring and organizing code, particularly in object-oriented programming.
 
