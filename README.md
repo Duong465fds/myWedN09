@@ -35,6 +35,7 @@ class testController extends Controller
 }
 }
 ```
+![<img width="1559" height="181" alt="first exercise" src="https://github.com/user-attachments/assets/ed2e62fc-5328-4d6b-be92-a9dfbb5bee8f" />]
 
 Kết quả đánh giá: User story đã hoàn thành thành công. Tất cả các yếu tố quan trọng về cú pháp PHP như biến, toán tử, vòng lặp và cấu trúc điều khiển đều được hiểu rõ.
 
