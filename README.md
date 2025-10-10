@@ -142,6 +142,8 @@ class BookController extends Controller
 }
 
 ```
+<img width="1920" height="999" alt="image" src="https://github.com/user-attachments/assets/027077d0-a7f5-4da6-8f8b-a27effca7193" />
+
 ## User Story 15:
 ## Giải thích về HTTP POST: Header, Body và Params
 
