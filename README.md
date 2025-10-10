@@ -99,3 +99,104 @@ Những điểm chính đã đề cập:
 - Framework: Công cụ như Laravel giúp phát triển PHP hiệu quả hơn với các tính năng như routing, middleware và ORM (Eloquent).
 
 Kết quả đánh giá: User story đã hoàn thành thành công. Vai trò của PHP trong phát triển web đã được hiểu rõ, bao gồm khả năng tạo trang động, tương tác database và quản lý session.
+## User Story 15:
+## Giải thích về HTTP POST: Header, Body và Params
+
+Khi gửi request HTTP POST (thường dùng với RESTful API), có 3 phần quan trọng:
+
+---
+
+### 1. POST Header
+
+- Là các thông tin phụ trợ đi kèm request, mô tả kiểu dữ liệu, xác thực, v.v.
+- Các header phổ biến:
+  - `Content-Type`: Kiểu dữ liệu của body (ví dụ: `application/json`, `application/x-www-form-urlencoded`)
+  - `Authorization`: Token xác thực (ví dụ: `Bearer <token>`)
+  - `Accept`: Định dạng dữ liệu phản hồi mong muốn (ví dụ: `application/json`)
+
+**Ví dụ:**
+```
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+---
+
+### 2. POST Body
+
+Là phần dữ liệu chính gửi lên server để xử lý.
+
+#### a. JSON Body
+
+- Định dạng dữ liệu kiểu JSON, thường dùng với API hiện đại.
+- Header cần có: `Content-Type: application/json`
+- **Ví dụ:**
+  ```json
+  {
+    "username": "duong465fds",
+    "password": "123456",
+    "profile": {
+      "age": 20,
+      "email": "abc@example.com"
+    }
+  }
+  ```
+
+#### b. Input Form (Form Data)
+
+Có hai kiểu phổ biến:
+
+**application/x-www-form-urlencoded**
+- Dữ liệu mã hóa dạng key=value, giống query string.
+- Header: `Content-Type: application/x-www-form-urlencoded`
+- **Ví dụ:**
+  ```
+  username=duong465fds&password=123456&email=abc%40example.com
+  ```
+
+**multipart/form-data**
+- Dùng cho form có upload file.
+- Header: `Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryXYZ`
+- **Ví dụ mô phỏng:**
+  ```
+  ------WebKitFormBoundaryXYZ
+  Content-Disposition: form-data; name="username"
+
+  duong465fds
+  ------WebKitFormBoundaryXYZ
+  Content-Disposition: form-data; name="avatar"; filename="me.jpg"
+  Content-Type: image/jpeg
+
+  [binary file data]
+  ------WebKitFormBoundaryXYZ--
+  ```
+
+---
+
+### 3. POST Params (Parameters)
+
+- Là các tham số truyền lên server để xác định hoặc lọc dữ liệu.
+- Có thể truyền qua:
+  - **Query String:** trên URL, ví dụ: `POST /users?role=admin`
+  - **Body Parameters:** nằm trong phần body (dạng JSON hoặc form-data).
+  - **Path Parameters:** nằm trực tiếp trong URL, ví dụ: `/users/123`
+
+**Ví dụ kết hợp:**
+
+- URL: `POST /users?role=admin`
+- Body:
+  ```json
+  {
+    "username": "duong465fds",
+    "password": "123456"
+  }
+  ```
+
+---
+
+### Tổng kết
+
+- **POST header:** thông tin phụ trợ, định dạng, xác thực, v.v.
+- **POST body:** dữ liệu chính gửi lên server (JSON, form-data,...)
+- **POST params:** tham số truyền qua URL (query), path, hoặc trực tiếp trong body.
+
