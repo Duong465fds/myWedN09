@@ -99,6 +99,28 @@ Những điểm chính đã đề cập:
 - Framework: Công cụ như Laravel giúp phát triển PHP hiệu quả hơn với các tính năng như routing, middleware và ORM (Eloquent).
 
 Kết quả đánh giá: User story đã hoàn thành thành công. Vai trò của PHP trong phát triển web đã được hiểu rõ, bao gồm khả năng tạo trang động, tương tác database và quản lý session.
+## User Story 14:
+## RESTful API là gì?
+
+**RESTful API** (Representational State Transfer Application Programming Interface) là một kiểu kiến trúc xây dựng API phổ biến trong phát triển web hiện đại.
+
+### Đặc điểm chính:
+- **Giao tiếp qua HTTP:** Sử dụng các phương thức HTTP như GET (lấy dữ liệu), POST (tạo mới), PUT/PATCH (cập nhật), DELETE (xóa).
+- **Stateless:** Mỗi request là độc lập, server không lưu trạng thái của client giữa các request.
+- **Địa chỉ tài nguyên rõ ràng:** Mỗi tài nguyên (ví dụ: user, bài viết, sản phẩm, ...) đều có một URL duy nhất.
+- **Định dạng dữ liệu:** Dữ liệu trao đổi thường ở dạng JSON hoặc XML.
+- **Khả năng mở rộng và tích hợp:** API dễ bảo trì, phát triển thêm tính năng, tích hợp với các hệ thống khác.
+
+### Ví dụ về các endpoint RESTful:
+```
+GET    /users         // Lấy danh sách người dùng
+GET    /users/1       // Lấy thông tin người dùng có id=1
+POST   /users         // Tạo người dùng mới
+PUT    /users/1       // Cập nhật thông tin người dùng id=1
+DELETE /users/1       // Xóa người dùng id=1
+```
+
+RESTful API giúp việc phát triển web, mobile, microservice trở nên dễ dàng, linh hoạt và chuẩn hóa hơn!
 ## User Story 15:
 ## Giải thích về HTTP POST: Header, Body và Params
 
