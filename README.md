@@ -121,6 +121,27 @@ DELETE /users/1       // Xóa người dùng id=1
 ```
 
 RESTful API giúp việc phát triển web, mobile, microservice trở nên dễ dàng, linh hoạt và chuẩn hóa hơn!
+
+
+## code
+
+
+```
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Book;
+class BookController extends Controller
+{
+  
+   public function apiGetBooks(){
+        $books = Book::all();
+        $jsonBooks = json_decode($books);
+        return response()->json($jsonBooks);
+    } 
+}
+
+```
 ## User Story 15:
 ## Giải thích về HTTP POST: Header, Body và Params
 
