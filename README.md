@@ -117,32 +117,7 @@ Một **Doctor Model** đại diện cho thông tin của bác sĩ trong hệ th
 
 ---
 
-## Mã nguồn: Doctor Model
-```python
-from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
 
-db = SQLAlchemy()
-
-class Doctor(db.Model):
-    __tablename__ = 'doctors'
-
-    doctor_id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    specialty = db.Column(db.String(100), nullable=False)
-    phone_number = db.Column(db.String(15), unique=True)
-    email = db.Column(db.String(120), unique=True, nullable=False)
-    created_at = db.Column(db.DateTime, default=datetime.utcnow)
-    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
-
-    def __init__(self, name, specialty, phone_number, email):
-        self.name = name
-        self.specialty = specialty
-        self.phone_number = phone_number
-        self.email = email
-
-    def __repr__(self):
-        return f"<Doctor {self.name} - {self.specialty}>"
 ## User Story 14:
 ## RESTful API là gì?
 
