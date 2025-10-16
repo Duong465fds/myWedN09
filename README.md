@@ -115,7 +115,6 @@ Một **Doctor Model** đại diện cho thông tin của bác sĩ trong hệ th
 - `created_at`: Thời điểm tạo bản ghi
 - `updated_at`: Thời điểm cập nhật bản ghi
 
----
 
 ## Mã nguồn: Doctor Model
 
@@ -148,7 +147,7 @@ class Doctor(db.Model):
     # Chuỗi đại diện cho đối tượng (dùng khi in ra hoặc debug)
     def __repr__(self):
         return f"<Doctor {self.name} - {self.specialty}>"
-
+...
 ## User Story 14:
 ## RESTful API là gì?
 
