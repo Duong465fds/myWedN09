@@ -99,6 +99,56 @@ Những điểm chính đã đề cập:
 - Framework: Công cụ như Laravel giúp phát triển PHP hiệu quả hơn với các tính năng như routing, middleware và ORM (Eloquent).
 
 Kết quả đánh giá: User story đã hoàn thành thành công. Vai trò của PHP trong phát triển web đã được hiểu rõ, bao gồm khả năng tạo trang động, tương tác database và quản lý session.
+# User Story 8: Model (Database)
+
+## Mục tiêu
+Trong thiết kế phần mềm, **Model** là phần chịu trách nhiệm biểu diễn và xử lý dữ liệu mà ứng dụng sử dụng. Model đóng vai trò là lớp kết nối giữa ứng dụng và cơ sở dữ liệu, giúp ánh xạ (mapping) các đối tượng trong mã nguồn thành các bảng trong hệ quản trị cơ sở dữ liệu quan hệ (Relational Database).  
+Model đồng thời chịu trách nhiệm cho việc xác thực, xử lý logic nghiệp vụ và đảm bảo tính toàn vẹn của dữ liệu.
+
+## Ví dụ trong hệ thống quản lý sức khỏe
+Một **Doctor Model** đại diện cho thông tin của bác sĩ trong hệ thống. Mỗi bác sĩ có các thuộc tính mô tả thông tin cá nhân và chuyên môn, bao gồm:
+- `doctor_id`: Mã định danh của bác sĩ (khóa chính)
+- `name`: Họ tên bác sĩ
+- `specialty`: Chuyên khoa
+- `phone_number`: Số điện thoại
+- `email`: Địa chỉ email
+- `created_at`: Thời điểm tạo bản ghi
+- `updated_at`: Thời điểm cập nhật bản ghi
+
+---
+
+## Mã nguồn: Doctor Model
+
+```python
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
+
+# Khởi tạo đối tượng SQLAlchemy
+db = SQLAlchemy()
+
+class Doctor(db.Model):
+    __tablename__ = 'doctors'  # Tên bảng trong cơ sở dữ liệu
+
+    # Các cột trong bảng 'doctors'
+    doctor_id = db.Column(db.Integer, primary_key=True)         
+    name = db.Column(db.String(100), nullable=False)           
+    specialty = db.Column(db.String(100), nullable=False)   
+    phone_number = db.Column(db.String(15), unique=True)          
+    email = db.Column(db.String(120), unique=True, nullable=False) 
+    created_at = db.Column(db.DateTime, default=datetime.utcnow)  
+    updated_at = db.Column(db.DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)  
+
+    # Hàm khởi tạo
+    def __init__(self, name, specialty, phone_number, email):
+        self.name = name
+        self.specialty = specialty
+        self.phone_number = phone_number
+        self.email = email
+
+    # Chuỗi đại diện cho đối tượng (dùng khi in ra hoặc debug)
+    def __repr__(self):
+        return f"<Doctor {self.name} - {self.specialty}>"
+
 ## User Story 14:
 ## RESTful API là gì?
 
