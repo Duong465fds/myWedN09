@@ -116,7 +116,8 @@ Validation để kiểm tra và ràng buộc dữ liệu
 
 <img width="1916" height="912" alt="image" src="https://github.com/user-attachments/assets/e2f8fb4a-6f85-4b06-93a3-350eb5b368a5" />
 
-![image](https://github.com/user-attachments/assets/f0a41fa7-58d5-425e-9f39-b4933f8bf786)
+<img width="1914" height="917" alt="image" src="https://github.com/user-attachments/assets/133d87d8-f32a-4278-99df-3e64c1d196f9" />
+
 
 #### Sửa/xoá sự kiện
 
