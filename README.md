@@ -93,14 +93,6 @@ Sử dụng @csrf và xss để chống tấn công
 Validation để kiểm tra và ràng buộc dữ liệu
 ![image](https://github.com/user-attachments/assets/53ed778e-2644-4f82-a3a1-a62ae246fb2d)
 
-# Link
-
-## Github Profile : https://github.com/tuanbao205/myweb
-
-## Link Demo : 
-
-## Public Web (deployment) link: https://timemanagerment.onrender.com
-
 # Một số hình ảnh chức năng chính
 
 ### Trang đăng nhập:
