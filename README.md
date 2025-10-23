@@ -56,24 +56,24 @@
 ![image](https://github.com/user-attachments/assets/9fc904a1-54ab-47e2-add1-278c8597d92b)
 
 ## Controller
-#### ProfileController:
+#### ProfileController: Cho phép người dùng cập nhật, chỉnh sửa và xóa tài khoản cá nhân
 
 ![image](https://github.com/user-attachments/assets/07235b34-4d58-4a3a-999a-4f5ed58de763)
 ![image](https://github.com/user-attachments/assets/9c9720f1-279f-4a9a-adce-fe78efa4728a)
 
 
-#### EventController:
+#### EventController: Quản lý sự kiện trong lịch
 
 ![image](https://github.com/user-attachments/assets/98ed60ca-8b7f-4068-a130-da0ebf1c00ec)
 ![image](https://github.com/user-attachments/assets/cd3f8546-1e39-4451-b900-51faf693b0f5)
 
-#### TaskController:
+#### TaskController:Quản lý nhiệm vụ
 
 ![image](https://github.com/user-attachments/assets/1e3c65a2-a746-4c9b-8de0-80898bef6586)
 ![image](https://github.com/user-attachments/assets/6f00b2be-5d3d-4ba2-b1b2-ba8789273f44)
 ![image](https://github.com/user-attachments/assets/f77d260d-a2c3-4399-b806-d5468cfd2b0a)
 
-#### ListController:
+#### ListController:Quản lý danh sách nhiệm vụ
 
 ![image](https://github.com/user-attachments/assets/f327a675-f47d-460b-a487-160b01bd097c)
 ![image](https://github.com/user-attachments/assets/160c67f0-3c1c-4e4d-bafc-f4236d352fac)
