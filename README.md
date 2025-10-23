@@ -109,7 +109,8 @@ Validation để kiểm tra và ràng buộc dữ liệu
 
 ## Trang chủ:
 
-![image](https://github.com/user-attachments/assets/5f22a266-68a6-4b81-931e-33fc74010d5c)
+<img width="1917" height="925" alt="image" src="https://github.com/user-attachments/assets/1b9cf25b-070e-4874-894e-86054184c869" />
+
 
 #### Tạo sự kiện:
 
