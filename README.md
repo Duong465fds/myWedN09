@@ -121,18 +121,24 @@ Validation để kiểm tra và ràng buộc dữ liệu
 
 #### Sửa/xoá sự kiện
 
-![image](https://github.com/user-attachments/assets/520235ce-9f39-4b35-ac91-99459649faf8)
+<img width="1919" height="907" alt="image" src="https://github.com/user-attachments/assets/64a66a75-d28f-44ab-97f8-07269bda3919" />
+
 
 ## Trang nhiệm vụ
 
-![image](https://github.com/user-attachments/assets/34c86aa4-7dc2-4da5-9fa7-cfab20b411b5)
+<img width="1914" height="911" alt="image" src="https://github.com/user-attachments/assets/83582616-2ad6-4c97-bdc4-c0c915f91480" />
+
 
 #### Tạo danh sách nhiệm vụ
 
-![image](https://github.com/user-attachments/assets/0f4eceff-94f0-4ba9-b691-d63a119a39c4)
-![image](https://github.com/user-attachments/assets/1d53e21e-4df0-4239-9455-2ef067a9219a)
+<img width="1919" height="516" alt="image" src="https://github.com/user-attachments/assets/2ca059d9-6abb-440d-b699-78c1deda6f05" />
+
+<img width="1919" height="903" alt="image" src="https://github.com/user-attachments/assets/40d637d4-34bf-49fc-ae55-6fb22272ef32" />
+
 
 #### Tạo nhiệm vụ
 
-![image](https://github.com/user-attachments/assets/4c0446f3-526b-460c-a476-7fdeeefdf6d8)
-![image](https://github.com/user-attachments/assets/d73588bf-706d-4543-87ba-de7a42bd6d62)
+<img width="1919" height="913" alt="image" src="https://github.com/user-attachments/assets/a4d20b63-e797-4d32-91e2-c5c62c1e7267" />
+
+<img width="1919" height="909" alt="image" src="https://github.com/user-attachments/assets/56971116-a53c-44e5-90bf-c30b842b37e0" />
+
